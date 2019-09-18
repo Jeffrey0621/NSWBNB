@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/fragment5"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/personalinfopage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/header" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+    <LinearLayout
+        android:id="@+id/userinfo_line"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_me"
+            android:padding="16dp"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="username"
+            android:paddingLeft="24dp"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#303F9F"/>
+
+    <LinearLayout
+        android:id="@+id/password_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@drawable/icon_password"
+            android:layout_weight="5"/>
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="password"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingLeft="24dp"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#303F9F"/>
+
+    <LinearLayout
+        android:id="@+id/order_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@drawable/icon_order"
+            android:layout_weight="5"/>
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="order"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingLeft="24dp"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#303F9F"/>
+
+    <LinearLayout
+        android:id="@+id/add_property_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@drawable/icon_property"
+            android:layout_weight="5"/>
+        <TextView
+            android:id="@+id/my_property"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="My property"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingLeft="24dp"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#303F9F"/>
+
+    <LinearLayout
+        android:id="@+id/logout_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@drawable/icon_logout"
+            android:layout_weight="5"/>
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="logout"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:paddingLeft="24dp"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

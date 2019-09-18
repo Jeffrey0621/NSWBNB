@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".SearchResult">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?actionBarSize"
+        app:navigationIcon="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/icon_location"
+                android:gravity="center"
+                android:hint="input the destination"
+                android:padding="8dp"
+                android:paddingLeft="24dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/search_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:src="@drawable/icon_more" />
+
+            <ImageButton
+                android:id="@+id/search_less"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:src="@drawable/icon_minus"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/search_checkdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:drawableLeft="@drawable/icon_date"
+                android:gravity="center"
+                android:paddingLeft="24dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="check-in check-out"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/search_guestnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_constraintTop_toBottomOf="@+id/checkdate" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@color/white"
+                android:id="@+id/search_bed"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Bed"/>
+
+                <com.jmf.addsubutils.AddSubUtils
+                    android:id="@+id/add_sub_bed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@color/white"
+                android:id="@+id/search_bedroom"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Bedroom"/>
+                <com.jmf.addsubutils.AddSubUtils
+                    android:id="@+id/add_sub_bedroom"
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@color/white"
+                android:id="@+id/search_bathroom"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Bathroom"/>
+                <com.jmf.addsubutils.AddSubUtils
+                    android:id="@+id/add_sub_bathroom"
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/filters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:drawableLeft="@drawable/icon_search_1"
+                android:paddingLeft="24dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Search"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/list_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="No result,search again."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/search_avi"
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:indicatorColor="@color/primary"
+                app:indicatorName="BallPulseIndicator" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/detailresult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

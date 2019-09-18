@@ -1,0 +1,30 @@
+week1:
+We chose the project 3 as our topic. I discussed with the team members and found that we would use python for the backend and vue for the frontend.We talked about the database schema.
+
+week2:
+I set up the page for login and sign up. I fixed the problem of access control allow origin. Because this problem made the test api could not be used and after I added 'CORS(app,support_credentials=True)' into the api file, the test could be done. I also applied the check of password strength based on zxcvbn in the function of sign up to make sure user's password was strong enough.I also checked the data format that the api should return with my teammates.  
+
+week3:
+We talked about the proposal.I set up the detail page and used the api to get data from the database.Then I adapted the data to the page and fixed some bugs in the frontend.
+
+week4:
+We talked together, we did not have a recommendation system so that the four accomodations information on the first page was not necessary, we just 
+commented that part of code to remove it. I worked with Paul Yi to adapt the data to the search result page. We could select the accomoaditons by check in-check out date, location, number of guests and the amenities.
+I also added a button which could show more filter conditions for user to choose, like sorting by price, number of beds. But these conditions have not been finished, just finished the frontend part.I also adapted the data for the detail page and fix the problem of the price format.
+
+week5:
+In the web frontend, I added personal profile page include changing password, editing personal information, personal property and user's own past and future trips. The function of showing trips, searching properties and showing details of property and booking had been finished.
+In the android, I created a project with android studio 3.4.1. The minSdkVersion was 24 and targetSdkVersion  was 28. I used some libraries to help the development such as glide for loading internet images, xutils and okhttp3 for internet requiring, Gson for data and some other UI libraries. The finished functions included login, logout, register, searching, booking, adding properties and show user's own trips.
+
+week6:
+This week, I added the function of changing password and added some query criteria like bed number, price. The function of canceling the trips has been finished.I started to work on the function of writing reviews.
+
+week7:
+Added the page of showing host orders. Made some pages could not be reached without logging in. Reformat part of the code.Finished the function of writing reviews.Changed the method of getting data in the booking page.I wrote some notes of the code.
+
+week8:
+Updated the UI of profile page to make the information more clear. Added the disabled date into calendar, the date had been booked could not be chosen on the calendar. Added the check out function in the host module. Fixed the problem of some page lossing data after refreshing. Added the recommend system into the webpage.
+
+week9:
+Updated android code. Added current trip function in frontend.Deal with the datepicker problem. Fixed some bugs.
+

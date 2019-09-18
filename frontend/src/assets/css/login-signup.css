@@ -1,0 +1,30 @@
+.bg{
+  background-color:#ececec;
+  height: 650px;
+}
+.login-box{
+  border-radius: 10px;
+  width: 320px;
+  height: 500px;
+  margin:0 auto;
+  background-color: white;
+}
+.login-inner-box{
+  padding: 12px;
+}
+.span-login{
+  margin: 16px 0 0 0;
+  font-size: 16px;
+  text-align: left;
+}
+.login-label{
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.login-btn{
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+}

@@ -1,0 +1,80 @@
+Week 1
+We decided to do project 3 because we think it is a very useful topic and every member is interested in it.
+I did some research on where to scrape data from.After discussion with team members,I downloaded the data 
+through airbnb api ,chose the useful data and uploaded it. 
+We had the discussion about what technologies to use for the frontend, backend and api.
+We drew the database schema for our application. 
+
+I wrote the first version of api.py including  ‘user creation’ and ‘user log in’.
+
+The plan for next week is to learn about flask login,
+authentication strategies and improve the security of the user management system.
+
+Week 2 
+We decided to build our database on AWS. We divided the api.py into several documents for better structure purpose. 
+
+I did a lot of research and study on flask wtforms and flask login(user_loader ,alternative tokens)
+and wrote the form.py(RegistrationForm,LoginForm,AccommodationForm,PhotoForm,SearchForm,uploadForm).
+Rewrote the register, log in api and wrote the log out api.
+
+However, to use Forms, we will need to return a render template.
+After discussion, we decided not to a build a multi-pages website but a single-page one.
+So I will have to rewrite these functions next week but I still feel happy 
+because I learned a lot about flask forms and flask authentications.
+
+Week 3
+I tried to write the token related functions using timed json web signature serializer at first.
+But the concept of it is less straightforward than just saving the token in the database.
+So I added the token generation, revoke and check functions into the user model 
+and applied HTTPBasicAuth and HTTPTokenAuth to support the authentification.
+
+I also wrote the token.py, auth.py,user retrieve api and improved the user registration, login, log out api.
+Then I realised the problems using flask_httpauth decorators, 
+so I moved the token verify and error handler functions into each api routes to make things easier.
+
+We tried to run the backend, frontend, aws together for the first MVP of the project and it worked well.
+We also wrote the proposal for the project this week. 
+I came up with some good suggestion and always being active expressing my ideas about the proposal.
+
+My plan for next week is to finish the user setting functions,
+user accommodation management functions and reservation management functions.
+
+Week 4
+Modify the database model and write the corresponding changes on other funtions based on new requirement
+Finished the user setting, password changing functions
+Finished part of the accommodation and reservation api 
+
+Plan for next week is to modify the review database schema and finish the functions related to reviews.
+Another plan is to search and learn about recommendation system
+
+Week 5
+Finished most of the functions related to the reviews
+Retrive the data of country codes for phone number input
+Learned about user-based,item-based recommendation systems and algorithms for calculating the similarities and discussed it with team mate.
+We decided to implement item-based recommedation system since we do not have user's detailed info and item-based is more accurate in this case. We built the first small version of recommedation system. I also did some searching about tensor based recommendation systems but we decided that a matrix is enough for our system.
+
+Plan for next week:keep updating the functions
+Focus on recommedation system.
+
+Week 6
+Finished review writng and retreiving(positive,negative) functions, finished reservation retrive functions for a host(based on different status of the reservations. 
+Fix the codes that have conflicts with the frontend.
+Made few changes to user.py,model.py,accommodation.py as required by Jeffery and also to be consistent with other newly added fuctions.
+
+Plan for next week: Go through the work flow of our app with the members and see if we miss anything.
+Work on reccommendation system with loki.
+
+Week7
+Finished "my favourite accommodations" related functions.
+Tested on backend-frontend intereacting with Jeffery and fixed few bugs.
+Discussed reccommendation system with loki and finished api related to reccomendation system.
+Raised the idea of user oriented reccommendation based on user rating and knn.
+
+Plan for next week: Work with team to make sure the app works functionally and try to improve the current system. 
+
+Week8
+We went through our system and discussed about what to improve.
+I worked with loki on sentiment analysis, generated the ratings of the reviews and made some change to the reviews related functions and apis for the sentiment analysis.
+Worked with loki on user-based recommendation system and finished the related api. Tested it with loki to improve the quality of recommendations.
+
+Plan for next week: Prepare the demo and the final report with the team.

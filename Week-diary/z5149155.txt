@@ -1,0 +1,71 @@
+Week1
+I am so exciting to get into our brand new project.
+Discuss with our team member to decide the topic of our project.
+We all agree with topic 3:Accommodation Web Portal.
+So I habe done a lot of research for how to build a online reservation platform.
+I have done the work below:
+Set up Github repo;
+Set up trello account;
+Make contributions to our proposal draft:
+Project depth and scale;
+Schedule;
+
+Week2
+Prepare to establish the proposal for our project.
+We divided our job into each person.
+I am willing to try to build a database in a cloud platform.
+At first,I tried Azure but I found it hard to use.
+Then I tried to use AWS for establishing a simple cloud database.
+RDS is a good option for me so I search for how to build a database in RDS.
+Hopefully I could do it with RDS.
+
+Yes,it works.
+I built a RDS database in AWS cloud platform.And configured all the features and data we are going to use.
+Gave it to other team member, and now they can connect to our database and utilize the data.
+It's time for me to move to next step, I will help to finish the proposal in the next few days.
+
+Week 3
+Met our tutor on Monday.
+He gave us a lot of good advice in implementing project and writing proposal.
+I finished work as below:
+Decided our project system architecture;
+Completed our database and generate ER diagram;
+Help to build our recommadation system;
+Help to test API function;
+Busy week.
+
+Week 4
+Finished proposal.
+Starting working on html template and recommand system.
+I do a lot of research about how to build a recommand system about a accommondation platform.
+There are generrally two way to get it : user-based algrithm and item-based algrithm.
+Starting build frame for our users' data and accommandation details, which could help us to caculate the similarity matrix about our recommendation system.
+
+Week 5
+Continue working on recommendation system.
+Writing code about it and analysis what kind of algrithm is better for our web portal.
+-Generate test data for our recommended system by myself:user.csv and accommodation.csv
+-Preprocessing data including data clean,data fill and data nomarlization
+-Calculate similarity matrix based on item-based theory and cosine_similarity algrithm
+-Completed the first version of our recommendation system
+
+Week 6
+Plan to continue focus on improving recommendation system,but got sick this week so I don't do much work this work
+Fix bugs in both API side and Recommendation side.
+Discuss with team member to decide how to finish our MVP model.
+
+Week 7
+Improving recommendation system
+-Browsing on Kaggle to learn and try to use PCA and Collaborative filtering to develop our model
+-Implementing KNN to improve the performance of predicting similar accomodations
+
+Week 8
+Fixing bugs.
+Replacing testing data with real data.
+Developing test scripts and finishing some general test.
+Planing to finish prototype in next week and finish all tests.
+Finishing final version of recommendation system
+
+Week 9
+Conducting tests.
+Working on writing final reports.

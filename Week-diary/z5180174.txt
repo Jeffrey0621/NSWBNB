@@ -1,0 +1,30 @@
+Week 1:
+We decided on Project 3 and created Github and Trello accounts. We planned to do some initial research so that we can meet later in the week and have a more concrete discussion on what technologies to use, where to get data, etc.
+
+We ended up deciding to use a Python/Flask backend, a Vue frontend, with a Postgres server. I set up the database models using the SQL Alchemy ORM and the database migrations. I also wrote a create user endpoint to make sure the DB code was set up correctly.
+
+Week 2:
+I wrote a simple create accommodation route. It still needs to cover corner cases and will need error handling.
+
+I also wrote a script to scrape images corresponding to the airbnb listing data that we had. I then wrote a script to populate the database with sample data based on the scraped images and airbnb data.
+
+Week 3:
+This week I mostly assisted in team members finishing their work. I helped Charlene by making suggestions and fixes in her pull request,  and I helped Loki by editing and offering suggestions on the project proposal.
+
+Week 4:
+This week I implemented the backend portion of the feature that allows users to search for accommodations based on certain criteria such as their travel dates, number of guests, price, and whether they required certain amenities such as Wifi or free parking. I also implemented the backend portion of the accommodation booking feature. I communicated with Jeffrey to make sure the backend and the frontend were communicating properly. Lastly, I made some small bug fixes and wrote some simple routes for Jeffrey that he requested.
+
+Week 5:
+This week I worked mostly on making bugfixes. I also refactored the application by splitting up the routes file into multiple smaller files based on functionality, as the one routes file was getting very big and messy. I also started writing some tests using pytest.
+
+Week 6:
+This week I spent a lot of time setting up the testing infrastrucure and finally writing tests for most of our functionality. I also spent time writing new routes that Jeffrey requested. Lastly, I worked on some bugfixes as well.
+
+Week 7:
+This week I implemented the delete accommodation funcationality. This turned out to be more complicated than I thought it would be as I had to update a lot of the code to handle deleted accommodations properly. I also wrote tests for all of the functionality in user.py. Lastly, I implemented the funcationality to check out of a reservation and the corresponding tests.
+
+Week 8:
+This week, I spent the majority of my time rewriting the scripts to populate the database. Previously, the script only inserted data into the accommodation table, but this time, I re-wrote it to also take real AirBnB review data to populate our reviews and reservation tables as well. Then I worked with the team to ensure that the data was exactly how we wanted it for our final demo. We identified some changes that we needed and that is what I will work on in week 9.
+
+Week 9:
+This week, I made some final changes to what data to show in our database. We limited the number of suburbs down to the ones with the most data. I also fixed the ordering of the search results to show accommodations with the most reviews first. We also spent time as a team prepping for our final demo. Lastly, I went through the frontend codebase and made sure wording choices, grammar, and spelling were all correct.

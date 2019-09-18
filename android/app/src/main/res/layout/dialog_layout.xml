@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme.Dark"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog">
+
+     <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:disable_date_color="#ABABAB"
+            app:header_bg="@drawable/calendar_header"
+            app:range_color="@color/range_bg_color"
+            app:selected_date_circle_color="@color/selected_date_circle_color"
+            app:title_color="@color/calendar_header_title">
+        </com.archit.calendardaterangepicker.customviews.DateRangeCalendarView>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Save"
+            android:id="@+id/save"/>
+    </LinearLayout>
+
+</LinearLayout>

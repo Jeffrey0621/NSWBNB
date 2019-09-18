@@ -1,0 +1,13 @@
+.DS_Store
+venv
+__pycache__/
+.env
+app.db
+geckodriver.log
+node_modules
+dist
+curl.txt
+todo.txt
+app/static
+scripts/airid_to_nswid.txt
+data/reviews.csv
