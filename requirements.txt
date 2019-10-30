@@ -28,7 +28,7 @@ Mako==1.0.12
 MarkupSafe==1.1.1
 matplotlib==3.1.1
 more-itertools==7.1.0
-nltk==3.4.4
+nltk==3.4.5
 numpy==1.16.4
 packaging==19.0
 pandas==0.25.0
